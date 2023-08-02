@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-import { AccountProvider } from '../context/Provider';
+import { AccountProvider } from './context/Provider';
 
 import AccountHome from './page/Home/AccountHome';
 import AccountProfile from './page/AccountProfile/AccountProfie';

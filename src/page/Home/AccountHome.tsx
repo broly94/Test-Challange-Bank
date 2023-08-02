@@ -1,7 +1,7 @@
 import { useContext, useEffect } from 'react';
 import { getAccount } from '../../api/getAccount';
 import { Data } from '../../interfaces';
-import { AccountContext } from '../../../context/Context';
+import { AccountContext } from '../../context/Context';
 import CardAccount from './components/CardAccount';
 
 export default function AccountHome() {

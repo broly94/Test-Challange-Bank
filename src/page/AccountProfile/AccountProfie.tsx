@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 import { Navigate, useParams } from 'react-router-dom';
-import { AccountContext } from '../../../context/Context';
+import { AccountContext } from '../../context/Context';
 import { AccountData } from '../../interfaces';
 import { useTransformTypeLetter } from '../../hooks/useTransformTypeLetter';
 

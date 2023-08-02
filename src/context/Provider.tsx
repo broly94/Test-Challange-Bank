@@ -1,5 +1,5 @@
 import React from 'react';
-import { Accounts } from '../src/interfaces';
+import { Accounts } from '../interfaces';
 import { AccountContext } from './Context';
 
 interface Props {

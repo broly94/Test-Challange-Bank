@@ -1,5 +1,5 @@
 import React from 'react';
-import { Accounts } from '../src/interfaces/index';
+import { Accounts } from '../interfaces/index';
 interface Props {
 	accounts: Accounts['cuentas'];
 	setAccounts: React.Dispatch<React.SetStateAction<Accounts['cuentas']>>;

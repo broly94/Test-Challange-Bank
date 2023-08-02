@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { AccountContext } from '../../../../context/Context';
+import { AccountContext } from '../../../context/Context';
 import { Link } from 'react-router-dom';
 import { useTransformTypeLetter } from '../../../hooks/useTransformTypeLetter';
 
