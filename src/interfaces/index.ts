@@ -7,7 +7,7 @@ export interface Accounts {
 	cuestas: Cuestas[];
 }
 
-interface AccountData {
+export interface AccountData {
 	e: string;
 	n: string;
 	t: string;
@@ -19,10 +19,4 @@ interface AccountData {
 interface Cuestas {
 	id: number;
 	nombre: string;
-}
-
-export interface TypeAccounts {
-	CC: 'Cuenta corriente';
-	CA: 'Caja de ahorro';
-	CCP: 'Caja de ahorro personal';
 }
