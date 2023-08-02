@@ -1,4 +1,4 @@
-import { useContext, useEffect } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { getAccount } from '../../api/getAccount';
 import { Data } from '../../interfaces';
 import { AccountContext } from '../../context/Context';
