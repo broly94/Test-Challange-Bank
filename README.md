@@ -1,27 +1,21 @@
-# React + TypeScript + Vite
+1. Instalación
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Clona el repositorio:
 
-Currently, two official plugins are available:
+command: git clone https://github.com/broly94/Test-Challange-Bank.git
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+2. Navega hasta el directorio del proyecto
 
-## Expanding the ESLint configuration
+command: cd Test-Challange-Bank
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+3. Instala las dependencias utilizando pnpm
 
-- Configure the top-level `parserOptions` property like this:
+command: pnpm install
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+4. Inicia la aplicación
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+pnpm run dev
+
+5. Aplicacion alojada en Vercel
+
+Link:
