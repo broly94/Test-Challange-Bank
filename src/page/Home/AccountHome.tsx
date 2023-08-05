@@ -36,11 +36,17 @@ export default function AccountHome() {
 	return (
 		<>
 			{accounts.length == 0 ? (
-				<div className='grow h-auto flex flex-row flex-wrap gap-5 justify-center items-center account-component'>
+				<div
+					className='grow h-auto flex flex-row flex-wrap gap-5 justify-center items-center account-component'
+					data-testid='accounts-container'
+				>
 					<h1 className='text-2xl font-medium'>No hay cuentas para mostrar</h1>
 				</div>
 			) : (
-				<div className='grow h-auto flex flex-row flex-wrap gap-5 justify-center items-center account-component'>
+				<div
+					className='grow h-auto flex flex-row flex-wrap gap-5 justify-center items-center account-component'
+					data-testid='accounts-container'
+				>
 					<button
 						onClick={showPrev}
 						disabled={startIndex === 0}
