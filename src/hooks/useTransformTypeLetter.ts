@@ -1,4 +1,4 @@
-export const useTransformTypeLetter = (letter: string) => {
+export const useTransformTypeLetter = (letter: string | undefined) => {
 	const letterUppercase = letter && letter.toUpperCase();
 	switch (letterUppercase) {
 		case 'CC':

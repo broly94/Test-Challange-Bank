@@ -36,10 +36,7 @@ export default function AccountHome() {
 	return (
 		<>
 			{accounts.length == 0 ? (
-				<div
-					className='grow h-auto flex flex-row flex-wrap gap-5 justify-center items-center account-component'
-					data-testid='accounts-container'
-				>
+				<div className='grow h-auto flex flex-row flex-wrap gap-5 justify-center items-center' data-testid='not-accounts-container'>
 					<h1 className='text-2xl font-medium'>No hay cuentas para mostrar</h1>
 				</div>
 			) : (
@@ -49,7 +46,7 @@ export default function AccountHome() {
 				>
 					<button
 						onClick={showPrev}
-						disabled={startIndex === 0}
+						data-testid='button-previous-options'
 						className={`mr-2 ${
 							startIndex === 0 ? 'hidden' : 'inline-block'
 						} w-60 h-36 bg-green-600 text-center justify-center rounded-md cursor-pointer text-white `}
@@ -61,7 +58,7 @@ export default function AccountHome() {
 
 					<button
 						onClick={showNext}
-						disabled={startIndex + accountPerPage >= accounts.length}
+						data-testid='button-more-options'
 						className={`${
 							startIndex + accountPerPage >= accounts.length ? 'hidden' : 'inline-block'
 						} w-60 h-36 bg-green-600 text-center justify-center rounded-md cursor-pointer text-white`}

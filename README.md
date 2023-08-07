@@ -1,21 +1,25 @@
-1. Instalación
+# Instalación
 
-# Clona el repositorio:
+Clona el repositorio:
 
-# command: git clone https://github.com/broly94/Test-Challange-Bank.git
+Command: git clone https://github.com/broly94/Test-Challange-Bank.git
 
-2. Navega hasta el directorio del proyecto
+# Navega hasta el directorio del proyecto
 
-# command: cd Test-Challange-Bank
+Command: cd Test-Challange-Bank
 
-3. Instala las dependencias utilizando pnpm
+# Instala las dependencias utilizando pnpm
 
-# command: pnpm install
+command: pnpm install
 
-4. Inicia la aplicación
+# Inicia la aplicación
 
-# pnpm run dev
+pnpm run dev
 
-5. Aplicacion alojada en Vercel
+# Inicia los test de la aplicación
 
-# Link: https://test-challange-bank.vercel.app
+pnpm run test
+
+# Aplicacion alojada en Vercel
+
+Link: https://test-challange-bank.vercel.app

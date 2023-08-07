@@ -4,6 +4,7 @@ import { AccountProvider } from './context/Provider';
 
 import AccountHome from './page/Home/AccountHome';
 import AccountProfile from './page/AccountProfile/AccountProfie';
+import NotFound from './page/NotFound/NotFound';
 function App() {
 	return (
 		<BrowserRouter>
@@ -19,6 +20,7 @@ function App() {
 					<Routes>
 						<Route path='/' element={<AccountHome />} />
 						<Route path='/account/:numberAccount' element={<AccountProfile />} />
+						<Route path='/404' element={<NotFound />} />
 					</Routes>
 				</AccountProvider>
 				<div className='flex-none h-auto'>

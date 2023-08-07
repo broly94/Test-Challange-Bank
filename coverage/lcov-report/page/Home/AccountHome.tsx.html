@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">31.57% </span>
+                <span class="strong">42.1% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>6/19</span>
+                <span class='fraction'>8/19</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">40% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/10</span>
+                <span class='fraction'>4/10</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">11.11% </span>
+                <span class="strong">33.33% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>1/9</span>
+                <span class='fraction'>3/9</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">37.5% </span>
+                <span class="strong">50% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>6/16</span>
+                <span class='fraction'>8/16</span>
             </div>
         
             
@@ -132,35 +132,30 @@
 <a name='L67'></a><a href='#L67'>67</a>
 <a name='L68'></a><a href='#L68'>68</a>
 <a name='L69'></a><a href='#L69'>69</a>
-<a name='L70'></a><a href='#L70'>70</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L70'></a><a href='#L70'>70</a>
+<a name='L71'></a><a href='#L71'>71</a>
+<a name='L72'></a><a href='#L72'>72</a>
+<a name='L73'></a><a href='#L73'>73</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">4x</span>
@@ -168,6 +163,17 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -210,8 +216,8 @@ import CardAccount from './components/CardAccount';
 export default function AccountHome() {
 	let { accounts, setAccounts, setStartIndex, startIndex, accountPerPage } = useContext(AccountContext);
 &nbsp;
-	const getAccounts = <span class="fstat-no" title="function not covered" >as</span>ync () =&gt; {
-		const { data } = <span class="cstat-no" title="statement not covered" >(await getAccount()) as Data;</span>
+	const getAccounts = async () =&gt; {
+		const { data } = (await getAccount()) as Data;
 <span class="cstat-no" title="statement not covered" >		if (!data) {</span>
 <span class="cstat-no" title="statement not covered" >			accounts = [];</span>
 		} else {
@@ -232,23 +238,26 @@ export default function AccountHome() {
 <span class="cstat-no" title="statement not covered" >		setStartIndex(<span class="fstat-no" title="function not covered" >(p</span>revStartIndex) =&gt; <span class="cstat-no" title="statement not covered" >Math.max(prevStartIndex - accountPerPage, 0))</span>;</span>
 	};
 &nbsp;
-	useEffect(<span class="fstat-no" title="function not covered" >()</span> =&gt; {
-<span class="cstat-no" title="statement not covered" >		getAccounts();</span>
+	useEffect(() =&gt; {
+		getAccounts();
 	}, []);
 &nbsp;
 	return (
 		&lt;&gt;
 			{accounts.length == 0 ? (
-				&lt;div className='grow h-auto flex flex-row flex-wrap gap-5 justify-center items-center account-component'&gt;
+				&lt;div className='grow h-auto flex flex-row flex-wrap gap-5 justify-center items-center' data-testid='not-accounts-container'&gt;
 					&lt;h1 className='text-2xl font-medium'&gt;No hay cuentas para mostrar&lt;/h1&gt;
 				&lt;/div&gt;
 			) : (
-				&lt;div className='grow h-auto flex flex-row flex-wrap gap-5 justify-center items-center account-component'&gt;
+				&lt;div
+					className='grow h-auto flex flex-row flex-wrap gap-5 justify-center items-center account-component'
+					data-testid='accounts-container'
+				&gt;
 					&lt;button
 						onClick={showPrev}
-						disabled={startIndex === 0}
+						data-testid='button-previous-options'
 						className={`mr-2 ${
-							startIndex === 0 ? 'hidden' : 'inline-block'
+							startIndex === 0 ? 'hidden' : <span class="branch-1 cbranch-no" title="branch not covered" >'inline-block'</span>
 						} w-60 h-36 bg-green-600 text-center justify-center rounded-md cursor-pointer text-white `}
 					&gt;
 						{'&lt;&lt; Opciones anteriores'}
@@ -258,9 +267,9 @@ export default function AccountHome() {
 &nbsp;
 					&lt;button
 						onClick={showNext}
-						disabled={startIndex + accountPerPage &gt;= accounts.length}
+						data-testid='button-more-options'
 						className={`${
-							startIndex + accountPerPage &gt;= accounts.length ? 'hidden' : 'inline-block'
+							startIndex + accountPerPage &gt;= accounts.length ? <span class="branch-0 cbranch-no" title="branch not covered" >'hidden' </span>: 'inline-block'
 						} w-60 h-36 bg-green-600 text-center justify-center rounded-md cursor-pointer text-white`}
 					&gt;
 						{'Más opciones &gt;&gt;'}
@@ -277,7 +286,7 @@ export default function AccountHome() {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2023-08-05T13:11:10.999Z
+                at 2023-08-07T03:50:08.880Z
             </div>
         <script src="../../prettify.js"></script>
         <script>
